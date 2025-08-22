@@ -11,6 +11,7 @@ from mlflow.entities import SpanType
 # Decorated with @mlflow.trace to trace the function call.
 
 mlflow.set_tracking_uri("http://localhost:5001")
+mlflow.set_experiment("weather-api")
 
 # Initialize OpenAI client
 client = OpenAI()
